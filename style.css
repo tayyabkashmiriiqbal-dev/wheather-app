@@ -1,9 +1,33 @@
 *{
     align-items: center;
     text-align: center;
-    background-color: lightblue;
+    background-color: rgb(91, 117, 126);
 }
 .cloud{
     font-size: 70px;
    
+}
+.but{
+    background-color: greenyellow;
+    height: 30px;
+    width: 65px;
+    font-size: 17px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+}
+.input{
+    color: lightskyblue;
+}
+.on{
+    align-items: center;
+    text-align: center;
+    border: 10px solid rgb(192, 234, 253);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+margin: auto;
+margin-top: 40px;
+color: rgb(252, 255, 252);
+
 }
