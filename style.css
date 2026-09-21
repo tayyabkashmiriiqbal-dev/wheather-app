@@ -1,33 +1,129 @@
-*{
-    align-items: center;
-    text-align: center;
-    background-color: rgb(91, 117, 126);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.cloud{
-    font-size: 70px;
-   
-}
-.but{
-    background-color: greenyellow;
-    height: 30px;
-    width: 65px;
-    font-size: 17px;
-    font-weight: bolder;
-    border: none;
-    border-radius: 10px;
-}
-.input{
-    color: lightskyblue;
-}
-.on{
-    align-items: center;
-    text-align: center;
-    border: 10px solid rgb(192, 234, 253);
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-margin: auto;
-margin-top: 40px;
-color: rgb(252, 255, 252);
 
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #4facfe);
+}
+
+/* Main Weather Card */
+.on {
+  width: 380px;
+  min-height: 520px;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Temperature */
+.temp {
+  font-size: 55px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Weather Icon */
+#weather-icon {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Search Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input {
+  flex: 1;
+  height: 45px;
+  padding: 0 15px;
+
+  border: none;
+  outline: none;
+  border-radius: 12px;
+
+  font-size: 16px;
+  background-color: white;
+}
+
+.input::placeholder {
+  color: #888;
+}
+
+/* Search Button */
+.but {
+  height: 45px;
+  padding: 0 18px;
+
+  border: none;
+  border-radius: 12px;
+
+  background-color: #0077ff;
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.but:hover {
+  background-color: #005dcc;
+  transform: scale(1.05);
+}
+
+/* Weather Information */
+.humidity,
+.rain,
+.time,
+.feels-like,
+.condition,
+.country {
+  margin: 12px 0;
+  padding: 10px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 450px) {
+  .on {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .temp {
+    font-size: 45px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  .but {
+    width: 100%;
+  }
 }
