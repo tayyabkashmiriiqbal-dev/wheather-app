@@ -13,7 +13,7 @@ body {
   background: linear-gradient(135deg, #74ebd5, #4facfe);
 }
 
-/* Main Weather Card */
+
 .on {
   width: 380px;
   min-height: 520px;
@@ -27,14 +27,13 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-/* Temperature */
 .temp {
   font-size: 55px;
   color: white;
   margin-bottom: 10px;
 }
 
-/* Weather Icon */
+
 #weather-icon {
   width: 110px;
   height: 110px;
@@ -42,7 +41,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* Search Form */
+
 form {
   display: flex;
   gap: 10px;
@@ -66,7 +65,7 @@ form {
   color: #888;
 }
 
-/* Search Button */
+
 .but {
   height: 45px;
   padding: 0 18px;
@@ -89,7 +88,7 @@ form {
   transform: scale(1.05);
 }
 
-/* Weather Information */
+
 .humidity,
 .rain,
 .time,
@@ -108,7 +107,7 @@ form {
   font-weight: 500;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 450px) {
   .on {
     width: 90%;
